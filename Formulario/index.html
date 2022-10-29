@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+    <h1>Seja bem-vindo!</h1>
+    <h2>Insira E-mail e Senha.</h2>
+    <form action="" method="post" name="formulario">
+        <ul>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Ex:usuario@servidor.com" name="emailUsuario" 
+                pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,}$" required 
+                title="Informe o email que você usou no cadastro.">
+            </li>
+            <li>
+                <label for="senha">Senha: </label>
+                <input type="password" placeholder="Informe uma senha de 6 digitos." name="senhaDoUsuario" 
+                minlength="6" required 
+                title="A senha precisa conter 6 caracteres.">
+            </li>
+        </ul>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>
